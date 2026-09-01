@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        /*descendant selector
+        div p {
+            color: red;
+        }*/
+        /*child selector
+        div > p {
+            color: blue;
+        }*/
+        /*adjacent sibling selector hanya mengambil elemen yang sejajar dengan elemen sebelumnya
+        div + p {
+            color: yellow;
+        }*/
+        /*general sibling selector mengambil semua elemen yang sejajar dengan elemen sebelumnya*/
+        div ~ p {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>
+            <p>ini child dari artikel</p>
+        </article>
+        <p>ini child dari div</p>
+    </div>
+    <p>ini sejajar dengan div</p>
+    <p>ini juga sejajar dengan div</p>
+</body>
+</html>

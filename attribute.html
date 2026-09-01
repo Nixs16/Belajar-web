@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute</title>
+    <style>
+        /*css attribute selector digunakan untuk memilih elemen berdasarkan atribut yang dimilikinya, contoh dibawah ini adalah memilih semua elemen a yang memiliki atribut target
+        a[target] {
+            color: red;
+        }*/
+
+        /*css attribute selector juga bisa digunakan untuk memilih elemen berdasarkan nilai atributnya, contoh dibawah ini adalah memilih semua elemen a yang memiliki atribut target dengan nilai _blank
+        a[target="_blank"] {
+            color: green;
+        }*/
+        
+        /*css [attribute~value] selector digunakan untuk memilih elemen yang memiliki atribut dengan nilai tertentu, contoh dibawah ini adalah memilih semua elemen p yang memiliki atribut title dengan nilai belajar
+        p[title~="belajar"] {
+            color: blue;
+        }*/
+
+        /*css [attribute|=value] selector digunakan untuk memilih elemen yang memiliki atribut dengan nilai tertentu, contoh dibawah ini adalah memilih semua elemen p yang memiliki atribut title dengan nilai belajar
+        p[title|="belajar"] {
+            color: red;
+        }*/
+
+        /*css [attribute^=value] selector digunakan untuk memilih elemen yang memiliki atribut dengan nilai tertentu, contoh dibawah ini adalah memilih semua elemen p yang memiliki atribut title dengan nilai belajar
+        p[title^="belajar"] {
+            color: red;
+        }*/
+
+        /*css [attribute$=value] selector digunakan untuk memilih elemen yang memiliki atribut dengan nilai tertentu, contoh dibawah ini adalah memilih semua elemen p yang memiliki atribut title dengan nilai belajar
+        p[title$="belajar"] {
+            color: red;
+        }*/
+
+        /*css [attribute*=value] selector digunakan untuk memilih elemen yang memiliki atribut dengan nilai tertentu, contoh dibawah ini adalah memilih semua elemen p yang memiliki atribut title dengan nilai belajar
+        p[title*="belajar"] {
+            color: red;
+        }*/
+
+        /*css attribute selector tanpa tag bahkan bisa menggunakan class atau id*/
+        [title*="belajar"] {
+            color: red;
+        }
+
+        /*
+        .article[title*="belajar"] {
+            color: blue;
+        }*/ 
+
+    </style>
+</head>
+<body>
+    <a href="" target="_blank" >contoh 1</a>
+    <a href="">contoh 1</a>
+    <a href="" target="_self">contoh 1</a>
+    <a href="">contoh 1</a>
+    <p title="belajar pemograman">dengan title belajar pemograman</p>
+    <p title="belajarpemograman">dengan title belajarpemograman</p>
+    <p title="belajar">dengan title belajar</p>
+    <p title="belajar-pemograman">dengan title belajar-pemograman</p>    
+    <p title="pemograman belajar">dengan title pemograman belajar</p>
+    <p class="article" title="belajar">dengan title belajar</p>
+</body>
+</html>
