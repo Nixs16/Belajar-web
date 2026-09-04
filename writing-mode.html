@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        /*height tinggi width lebar padding diluar content margin diluar padding*/
+        /*kalo ada margin yg saling ketemu dia akan ambil margin yg paling besar*/
+        /*kalo nyebutin 1 ukuran saja, maka semua sisi ukuran akan sama */
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        div {
+            background-color: blue;
+            margin: 0px;
+            padding: 0px;
+        }
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+        .artikel1 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            padding: 10px 20px 10px 20px; /*top right bottom left */
+            text-align: justify;
+            margin: 10px 20px 10px 20px; /*top right bottom left */
+            border-style: solid dotted dotted solid; /*top right bottom left */
+            border-width: 5px 10px 5px 10px;
+            border-radius: 20px 0px 20px 0px;
+            writing-mode: vertical-lr;
+            
+        }
+        .artikel2 {
+            height: 100px;
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            border-left-style: solid;
+            border-left-color: green;
+            border-left-width: 5px;
+            border-right-style: solid;
+            border-right-color: green;
+            border-right-width: 5px;
+            border-radius: 20px 0px 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="artikel1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illum ipsum error eveniet maxime nam! Obcaecati cum molestiae, dicta ratione possimus vero laboriosam minus ipsa nihil! Eligendi reiciendis animi doloribus!lo</p>
+    </div>
+    <div class="artikel2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dolor nesciunt rerum eius repellat ex doloribus ducimus nostrum voluptatum velit nemo quae dolore quam repudiandae, minima odio obcaecati sed nihil?</p>
+    </div>
+</body>
+</html>
